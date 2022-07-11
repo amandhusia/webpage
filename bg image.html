@@ -1,0 +1,225 @@
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<style>
+*{
+margin:0px;
+padding:0px;
+box-sizing:border-box;
+}
+.cont{
+width:100%;
+height:600px;
+background-image:url(d.jpg);
+background-position:top-center;
+background-size:cover;
+}
+.header{
+width:80%;
+text-align:center;
+margin:auto;
+position:relative;
+top:200px;
+color:white;
+}
+nav ul{
+display:flex;
+justify-content:space-around;;
+margin:auto;
+padding:20px;
+width:60%;
+}
+nav li a{
+width:200px;
+color:white;
+text-decoration:none;
+text-align:center;
+font-size:20px;
+//padding:8px;
+//margin:10px;
+}
+nav li{
+list-style:none;
+}
+nav li :hover{
+height:45;
+width:110px;
+background:rgba(343,45,56,0.3);
+transition-duration:0.4s;
+cursor:pointer;
+}
+.head{
+width:80%;
+text-align:center;
+margin:auto;
+padding:40px;
+}
+.scont{
+display:flex;
+justify-content:center;
+
+}
+.box{
+width:200px;
+height:200px;
+border:2px solid black;
+margin:auto;
+padding:20px;
+text-align:center;
+font-size:14px;
+}
+.footer{
+width:100vw;
+height:60px;
+background-color:gray;
+margin-top:60px;
+}
+.btn{
+width:100px;
+height:40px;
+margin:auto;
+color:white;
+margin-top:20px;
+background:rgba(34,45,56,0.5);
+border-radius:4px;
+border:2px solid black;
+}
+.btn:hover{
+height:45;
+width:110;
+background:rgba(343,45,56,0.3);
+transition-duration:0.4s;
+cursor:pointer;
+}
+
+.fa{
+display:none;
+}
+
+@media (max-width:650px){
+.scont{
+display:block;
+}
+.box{
+margin-top:20px;
+width:80%;
+}
+nav ul {
+display:block;
+background-color:orange;
+width:200px;
+height:100vh;
+z-index:2;
+right:-200px;
+position:fixed;
+top:0px;
+text-align:left;
+transition:0.5s;
+}
+nav ul li{
+display:block;
+color:white;
+font-size:40px;
+margin:20px;
+cursor:pointer;
+margin-left:50px;
+width:100px;
+height:30px;
+
+}
+nav ul li a{
+text-align:left;
+
+}
+nav li {
+position:relative;
+left:-50px;
+width:100px;
+margin:4px;
+padding:0px;
+}
+ul li:first-child{
+margin-top:100px;
+}
+.fa-bars{
+display:block;
+width:22px;
+height:22px;
+font-size:25px;
+cursor:pointer;
+color:white;
+position:absolute;
+top:10px;
+left:10px;
+}
+
+.fa-times{
+display:block;
+width:22px;
+height:22px;
+font-size:25px;
+cursor:pointer;
+color:white;
+//position:absolute;
+top:5px;
+left:10px;
+margin-bottom:40px;
+}
+.box{
+overflow:auto;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="cont">
+<nav>
+<ul id="navlinks">
+<div onclick="hidemenu()"><i class="fa fa-times" ></i></div>
+<li><a href="#">home<a></li>
+<li><a href="#">about us<a></li>
+<li><a href="#">context<a></li>
+<li><a href="#">contact us<a></li>
+</ul>
+<div onclick="showmenu()"><i class="fa fa-bars" ></i></div>
+</nav>
+<div class="header">
+<h1>Demonstration of image as the 
+background</h1>
+<p>Light colour image background</p>
+<button class="btn">Click here<button>
+</div>
+</div>
+
+<div class="head"><h2>this is first webpage</h2></div>
+<div class="scont">
+<div class="box">“Follow your inner moonlight; don’t hide the madness.” – Allen Ginsberg
+</div>
+<div class="box">“Life’s journey is not to arrive at the grave safely in a well preserved body, but rather to skid in sideways, totally worn out, shouting ‘Holy shit…what a ride!’” – Hunter S. Thompson</div>
+<div class="box">“Ah come on, these streams of light are not so subtle. All along the ditch, signs of life in sinking puddles!” – Sarah Harmer (from Dandelions in Bullet Holes)</div>
+<div class="box">“You cannot prevent the birds of sorrow from flying over your head, but you can prevent them from building a nest in your hair.” – Chinese Proverb</div>
+</div>
+
+<footer class="footer">
+</footer>
+
+<script>
+
+const navlinks=document.getElementById("navlinks");
+function showmenu(){
+navlinks.style.right= "0px";
+}
+function hidemenu(){
+navlinks.style.right= "-200px";
+}
+</script>
+</body>
+</html>
+
+
+
+
